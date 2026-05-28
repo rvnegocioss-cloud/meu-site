@@ -2,10 +2,219 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>RV Negócios</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>RV Negócios | Gestão de Redes Sociais</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: #0b1220;
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
+
+    /* NAV */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      background: rgba(15, 23, 42, 0.8);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      border-bottom: 1px solid #1f2937;
+    }
+
+    header h1 {
+      font-size: 18px;
+      font-weight: 600;
+      color: #38bdf8;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #cbd5e1;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    /* HERO */
+    .hero {
+      text-align: center;
+      padding: 120px 20px 80px;
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      font-weight: 700;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .hero p {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #94a3b8;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .btn {
+      margin-top: 30px;
+      display: inline-block;
+      padding: 14px 28px;
+      background: #38bdf8;
+      color: #0b1220;
+      font-weight: 600;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #0ea5e9;
+      transform: translateY(-2px);
+    }
+
+    /* SECTION */
+    .section {
+      padding: 80px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section h2 {
+      font-size: 32px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    /* CARDS */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #111827;
+      padding: 25px;
+      border-radius: 14px;
+      border: 1px solid #1f2937;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: #38bdf8;
+    }
+
+    .card h3 {
+      color: #38bdf8;
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    .card p {
+      color: #94a3b8;
+      font-size: 14px;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      border-top: 1px solid #1f2937;
+      color: #64748b;
+      font-size: 13px;
+    }
+
+    /* RESPONSIVO */
+    @media (max-width: 768px) {
+      header {
+        padding: 15px 20px;
+      }
+
+      .hero h2 {
+        font-size: 32px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <h1>RV Negócios</h1>
-  <p>Site no ar funcionando</p>
+
+  <header>
+    <h1>RV Negócios</h1>
+    <nav>
+      <a href="#servicos">Serviços</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Gestão Profissional de Redes Sociais para Empresas</h2>
+    <p>
+      Soluções digitais para gerenciamento de contas no Instagram e Facebook,
+      com foco em organização de conteúdo, presença digital e integração com APIs oficiais.
+    </p>
+
+    <a class="btn" href="https://wa.me/5500000000000">Falar com Especialista</a>
+  </section>
+
+  <section class="section" id="servicos">
+    <h2>Serviços</h2>
+
+    <div class="grid">
+
+      <div class="card">
+        <h3>Gestão de Redes Sociais</h3>
+        <p>Administração de perfis no Instagram e Facebook com foco em organização, consistência e presença digital profissional.</p>
+      </div>
+
+      <div class="card">
+        <h3>Integração com API da Meta</h3>
+        <p>Utilização de integrações oficiais para automação de mensagens, conexões e fluxos de atendimento digital.</p>
+      </div>
+
+      <div class="card">
+        <h3>Estratégia Digital</h3>
+        <p>Planejamento de conteúdo e estruturação de comunicação para empresas que desejam crescer online.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section" id="sobre">
+    <h2>Sobre</h2>
+    <p style="text-align:center; max-width:800px; margin:auto; color:#94a3b8;">
+      A RV Negócios atua com soluções digitais voltadas para presença online, automação e gestão de redes sociais,
+      oferecendo suporte técnico e estratégico para empresas em crescimento.
+    </p>
+  </section>
+
+  <footer id="contato">
+    © 2026 RV Negócios. Todos os direitos reservados.
+  </footer>
+
 </body>
 </html>
